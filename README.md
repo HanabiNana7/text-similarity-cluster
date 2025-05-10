@@ -1,1 +1,20 @@
-# text-similarity-cluster
+# text2vec-cluster
+
+用於將文字轉換為向量（Embeddings），並透過分群演算法找出語意上相似的句子群組。
+
+---
+
+## 🧠 功能簡介
+
+- 使用 `sentence-transformers` 將文字轉換為語意向量
+- 使用 `DBSCAN` 進行語意分群
+- 適用於：關鍵字分群、意圖分類、語意搜尋前處理等
+
+---
+
+## 📚 主要相依套件
+
+- `sentence-transformers`：文字轉向量模型
+- `scikit-learn`：分群與相似度演算法
+
+---
