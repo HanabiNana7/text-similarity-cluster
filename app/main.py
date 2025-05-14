@@ -13,7 +13,11 @@ def main():
     ]
 
     clusterer = TextClusterer()
-    labels = clusterer.cluster_texts(texts)
+    labels = clusterer.cluster_texts(
+        texts,
+        dbscan_eps=0.3,
+        min_dbscan_samples=2,
+    )
 
     clustered_titles = defaultdict(list)
     for text, label in zip(texts, labels):
